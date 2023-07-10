@@ -1,10 +1,8 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Text.Json;
-using static System.Text.Json.JsonElement;
 
-namespace WCKDRZR.CasedString
+namespace WCKDRZR
 {
     public class CasedStringConverterForNewtonsoft : JsonConverter<CasedString>
     {

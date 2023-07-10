@@ -13,6 +13,8 @@ To install, search "WckdRzr.CasedString" in your NuGet package manager, or visit
 CasedString can in most cases be used like a normal string, and unless otherwise specifed, the string will be case-insensitive.
 
 ```csharp
+using WCKDRZR;
+
 CasedString my_string = "Hello World";
 my_string == "Hello World" // true
 my_string == "hello world" // true
@@ -36,7 +38,7 @@ CasedString casedString = new("Hello World", true);
 
 You can use `==` or `!=` to compare your CasedString object to strings and other CasedStrings
 
-If either side of the comparision has `CaseSensitive` set to `true`, CasedString behave like normal string comparisions, providing a case-sensitive match.  If neither side is case sensitive, a case-insensitive match is returned.
+If either side of the comparision has `CaseSensitive` set to `true`, CasedString behaves like a normal string comparision, providing a case-sensitive match.  If neither side is case sensitive, a case-insensitive match is returned.
 
 By default, case-insensitive matches use `StringComparison.OrdinalIgnoreCase`, you can use an alternative comparision by setting the `ComparisonType` property, or via the constructor: 
 
@@ -63,7 +65,7 @@ This is a conscious decision to allow easier serialisation and null declarations
 
 Comparison is safest and most reliable using `==` and `!=`.  These operators handle null values better and do not care if either side is a String or a CasedString.  However the following are provided should you want them.
 
-*please note, `string.Equals` will always hit the built in string class, if you are comparing to a CasedString, make sure the CasedString object is on the left*
+*please note, `string.Equals()` will always hit the built in string class, if you are comparing to a CasedString, make sure the CasedString object is on the left*
 
 ### Equals
 
@@ -139,4 +141,4 @@ CasedString will deserialise to and from both strings and complex objects contai
 
 ### Serialisation
 
-When serialising to a JSON string, if the CaseSensitive flag is set to the default false, it will be serialised as a simple string (like the first example above).  If the flag is true, it will be serialised to a complex object (like the second example above).
+When serialising to a JSON string, if the CaseSensitive flag is set to the default false, it will be serialised as a simple string (like the first json example above).  If the flag is true, it will be serialised to a complex object (like the json second example above).

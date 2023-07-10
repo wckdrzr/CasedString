@@ -1,10 +1,10 @@
-﻿using System;
-using System.Linq;
+﻿using static System.Text.Json.JsonElement;
+using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using static System.Text.Json.JsonElement;
+using System.Linq;
 
-namespace WCKDRZR.CasedString
+namespace WCKDRZR
 {
     public class CasedStringConverter : JsonConverter<CasedString>
     {

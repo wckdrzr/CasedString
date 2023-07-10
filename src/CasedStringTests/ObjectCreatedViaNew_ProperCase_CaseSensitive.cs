@@ -1,6 +1,4 @@
-﻿using WCKDRZR.CasedString;
-
-namespace CasedStringTests
+﻿namespace WCKDRZR.CasedStringTests
 {
     public class ObjectCreatedViaNew_ProperCase_CaseSensitive
     {

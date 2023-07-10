@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
-using WCKDRZR.CasedString;
 
-namespace CasedStringTests
+namespace WCKDRZR.CasedStringTests
 {
     public class ObjectCreatedFromJson_WithNewtonsoft_ProperCase
     {

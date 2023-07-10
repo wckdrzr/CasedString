@@ -1,7 +1,6 @@
 ﻿using System.Text.Json;
-using WCKDRZR.CasedString;
 
-namespace CasedStringTests
+namespace WCKDRZR.CasedStringTests
 {
     public class ObjectCreatedFromJson_ProperCase_CaseSensitive
     {

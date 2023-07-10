@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace WCKDRZR.CasedString
+namespace WCKDRZR
 {
     [System.Text.Json.Serialization.JsonConverter(typeof(CasedStringConverter))]
     [Newtonsoft.Json.JsonConverter(typeof(CasedStringConverterForNewtonsoft))]

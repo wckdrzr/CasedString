@@ -1,7 +1,7 @@
 ﻿global using Xunit;
 global using FluentAssertions;
 
-using WCKDRZR.CasedString;
+using WCKDRZR;
 
 public static class TestStrings
 {
